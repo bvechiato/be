@@ -108,7 +108,8 @@ describe("services/dto/dealParser", () => {
       postcode: 99999,
       activities: ["A1", "A2"],
       skills: ["S1", "S2"],
-      languages: [{ title: "de", proficiency: 1 }, { title: "en", proficiency: 2 }],
+      languages: [{ id: 1, title: "de", proficiency: LangProficiency.BEGINNER }, 
+        { id: 2, title: "en", proficiency: LangProficiency.NATIVE }],
       schedule: [],
       districts: ["D1", "D2"],
     });
